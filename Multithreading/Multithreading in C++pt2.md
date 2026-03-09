@@ -1,3 +1,5 @@
+# 교착상태 (DeadLock)
+
 # 멀티스레딩
 
 ---
@@ -175,13 +177,13 @@
 3. 
     - 두 개의 스레드 오류를 보여주는 부분
         
-        ![image.png](attachment:23abca95-e7e8-4483-b856-83a99ad82e41:image.png)
+        ![image.png](image.png)
         
     - 첫 번째 스레드의 오류 분석
         
-        ![image.png](attachment:73c4553f-646d-4e47-8d68-bb7d9241cf69:image.png)
+        ![image.png](image%201.png)
         
-        ![image.png](attachment:c133c7ee-88b2-4295-8251-801c39cc401e:image.png)
+        ![image.png](image%202.png)
         
         - Owning Thread가 9990인데 이건 16진수이고, 이걸 10진수로 변환하면 39312가 된다.
         - 즉 말하고자 하는 것이 `Line 77`  에서 오류가 났는데, 난 이유는 교착 지점에 관한 오류이고, 오류를 발생시키는 Thread가 39312 즉 두 번째 Thread이다로 해석할 수 있다.
