@@ -1,4 +1,4 @@
-# game-server
+# 멀티스레딩
 
 
 ### 프로그램 (Program) 과 프로세스 (Process)
